@@ -10,9 +10,6 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
-      editor: './src/js/editor.js',
-      database: './src/js/database.js',
-      header: './src/js/header.js',
     },
     output: {
       filename: '[name].bundle.js',
@@ -21,7 +18,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Just Another Text Editor',
+        title: 'JATE',
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
