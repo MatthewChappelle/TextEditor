@@ -31,6 +31,7 @@ export default class {
     });
 
     this.editor.on('change', () => {
+      console.log('content')
       localStorage.setItem('content', this.editor.getValue());
     });
 
