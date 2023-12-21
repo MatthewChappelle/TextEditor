@@ -16,7 +16,7 @@ butInstall.addEventListener('click', async () => {
     if (!prompt) {
         return;
     }
-    promptEvent.prompt();
+    prompt.prompt();
 
     const { outcome } = await prompt.userChoice;
     console.log(`User response to the install prompt: ${outcome}`);
